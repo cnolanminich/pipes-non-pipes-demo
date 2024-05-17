@@ -1,0 +1,23 @@
+locations:
+  - location_name: data-no-pipes
+    code_source:
+      package_name: dagster_no_pipes
+    build:
+      directory: ./dagster-no-pipes
+      registry:  #ECR registry
+    container_context:
+      k8s:
+        run_k8s_config:
+          job_spec_config:
+            ttl_seconds_after_finished: 60
+          container_config:
+            resources:
+              limits:
+                cpu: 1000m
+                memory: 2G
+  - location_name: dagster-with-pipes
+    code_source:
+      package_name: dagster_with_pipes
+    build:
+      directory: ./dagster-with-pipes
+      registry:  # ECR registry

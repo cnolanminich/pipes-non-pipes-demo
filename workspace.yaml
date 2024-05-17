@@ -1,0 +1,8 @@
+load_from:
+  - python_module:
+      module_name: dagster_no_pipes
+      working_directory: dagster-no-pipes
+# Example of deploying multiple code locations locally
+  - python_module:
+      module_name: with_pipes
+      working_directory: dagster-with-pipes
