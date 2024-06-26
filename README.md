@@ -25,9 +25,14 @@ On MacOS:
 
 ## Setting up kind cluster + publishing the image
 
+
 `kind create cluster`
-`docker build -t pipes-example:v1 .` from directory
+
+`docker build utils/asset_example -t pipes-example:v1 .`
+`docker build utils/ops_example -t pipes-example-ops:v1 .`
+
 `kind load docker-image pipes-example:v1`
+`docker build utils/ops_example -t pipes-example-ops:v1 .`
 `cd with_pipes`
 
 ## Running both projects

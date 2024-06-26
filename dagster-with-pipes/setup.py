@@ -6,7 +6,7 @@ setup(
     install_requires=[
         "dagster",
         "dagster-cloud",
-        "dagster_k8s"
+        "dagster_k8s",
     ],
     extras_require={"dev": ["dagster-webserver", "pytest"]},
 )
