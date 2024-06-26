@@ -1,0 +1,11 @@
+
+/dagster-no-pipes/dagster_no_pipes.egg-info
+*.pyc
+/dagster-with-pipes/tmpb87dfgy5/history
+dagster-with-pipes/with_pipes/.DS_Store
+.DS_Store
+/dagster-with-pipes/tmph3mr3joq
+/dagster-with-pipes/tmpr61tk3bp
+/dagster-with-pipes/tmpoeoyx_0g
+*tmp*
+/dagster-with-pipes/with_pipes.egg-info
