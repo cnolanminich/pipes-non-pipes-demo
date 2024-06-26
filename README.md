@@ -30,8 +30,13 @@ On MacOS:
 
 `docker build utils/asset_example -t pipes-example:v1 .`
 `docker build utils/ops_example -t pipes-example-ops:v1 .`
+`docker build utils/partitioned_asset_example -t pipes-example-partiti
+oned-asset:v1`
+
 
 `kind load docker-image pipes-example:v1`
+`kind load docker-image pipes-example-partiti
+oned-asset:v1`
 `docker build utils/ops_example -t pipes-example-ops:v1 .`
 `cd with_pipes`
 
